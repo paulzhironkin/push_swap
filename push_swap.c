@@ -6,7 +6,7 @@
 /*   By: latahbah <latahbah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/09 11:45:07 by latahbah          #+#    #+#             */
-/*   Updated: 2022/02/25 19:28:16 by latahbah         ###   ########.fr       */
+/*   Updated: 2022/03/02 15:27:24 by latahbah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ int	main(int argc, char *argv[])
 	nums = get_nums(argc, argv, &data);
 	if (is_dublicated(nums, &data))
 	{
-		write(1, "Error", 5);
+		write(1, "Error\n", 6);
 		free(nums);
 		return (0);
 	}

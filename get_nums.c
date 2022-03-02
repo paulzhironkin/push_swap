@@ -6,7 +6,7 @@
 /*   By: latahbah <latahbah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 15:42:38 by latahbah          #+#    #+#             */
-/*   Updated: 2022/02/25 19:25:11 by latahbah         ###   ########.fr       */
+/*   Updated: 2022/03/02 16:08:06 by latahbah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ static int	*fill_nums(char **args, int arg_count)
 		tmp = INT_MAX + (long) 1;
 		if (is_int(args[i]))
 			tmp = ft_atoi(args[i]);
-		if (tmp <= INT_MAX)
+		else if (tmp <= INT_MAX)
 			nums[i] = tmp;
 		else
 		{
@@ -88,7 +88,7 @@ static int	*parse_args(int argc, char **argv, t_data *data)
 		tmp = INT_MAX + (long) 1;
 		if (is_int(argv[i + 1]))
 			tmp = ft_atoi(argv[i + 1]);
-		if (tmp <= INT_MAX)
+		else if (tmp <= INT_MAX)
 			nums[i] = (int) tmp;
 		else
 		{
@@ -110,7 +110,7 @@ int	*get_nums(int argc, char **argv, t_data *data)
 		nums = parse_args(argc, argv, data);
 	if (nums == NULL)
 	{
-		write(1, "Error", 5);
+		write(1, "Error\n", 6);
 		exit(EXIT_FAILURE);
 	}
 	return (nums);
