@@ -6,7 +6,7 @@
 /*   By: latahbah <latahbah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 15:42:38 by latahbah          #+#    #+#             */
-/*   Updated: 2022/03/02 16:08:06 by latahbah         ###   ########.fr       */
+/*   Updated: 2023/01/16 18:44:51 by latahbah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -110,7 +110,7 @@ int	*get_nums(int argc, char **argv, t_data *data)
 		nums = parse_args(argc, argv, data);
 	if (nums == NULL)
 	{
-		write(1, "Error\n", 6);
+		write(1, "Error2\n", 7);
 		exit(EXIT_FAILURE);
 	}
 	return (nums);

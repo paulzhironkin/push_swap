@@ -6,11 +6,12 @@
 /*   By: latahbah <latahbah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/09 11:45:07 by latahbah          #+#    #+#             */
-/*   Updated: 2022/03/02 15:27:24 by latahbah         ###   ########.fr       */
+/*   Updated: 2023/01/16 18:51:08 by latahbah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
+#include <stdio.h>
 
 static int	is_dublicated(int *nums, t_data *data)
 {
@@ -42,7 +43,7 @@ int	main(int argc, char *argv[])
 	nums = get_nums(argc, argv, &data);
 	if (is_dublicated(nums, &data))
 	{
-		write(1, "Error\n", 6);
+		write(1, "Error1\n", 7);
 		free(nums);
 		return (0);
 	}
