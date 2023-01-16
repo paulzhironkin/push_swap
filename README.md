@@ -20,3 +20,25 @@ Clone repo and type:
 ```Bash
 $ make
 ```
+Run `push_swap` program with array of ints as argument:
+
+```Bash
+$ ./push_swap 5 4 3 2 1
+```
+
+In response it will return a list op stack operations to sort array
+
+```Bash
+ $ rra
+ $ pb
+ $ pb
+ $ sa
+ $ rra
+ $ pa
+ $ ra
+ $ pa
+```
+
+### Visualisation of execution stack operation list:
+
+<img src="./visualizer.gif" width="500" alt="vizualize">
