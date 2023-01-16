@@ -39,6 +39,6 @@ In response it will return a list op stack operations to sort array
  $ pa
 ```
 
-### Visualisation of execution stack operation list example:
+### Visualisation of execution big stack operation list example:
 
 <img src="./visualizer.gif" width="500" alt="vizualize">
